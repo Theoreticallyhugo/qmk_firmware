@@ -20,6 +20,7 @@
 *.o
 *.stackdump
 *.sym
+**/**/**/env/
 
 # QMK-specific
 api_data/v1
