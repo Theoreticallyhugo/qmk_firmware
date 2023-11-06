@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_TAB , KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   ,                   KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , KC_LBRC,
                  KC_ESC , KC_A   , KC_S   , KC_D   , KC_F   , KC_G   ,                   KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, KC_QUOT,
                  KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_MUTE, _______, KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT,
-                                   KC_LOPT, _______, KC_LGUI, MO(2)  , KC_LCTL, KC_SPC , MO(1)  , KC_LGUI, _______, KC_ROPT),
+                                   KC_LOPT, _______, KC_LCTL, MO(2)  , KC_LGUI, KC_LGUI, KC_SPC , MO(1)  , _______, KC_ROPT),
 
     // SPECIAL CHARACTERS
     // on this layer you get the function keys in the top row
@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  KC_RBRC , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,                          KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , KC_MINS,
                  S(KC_RBRC), S(KC_1), S(KC_2), S(KC_3), S(KC_4), S(KC_5),                        S(KC_6), S(KC_7), S(KC_8), S(KC_9), S(KC_0), S(KC_MINS),
                  KC_NUBS, S(KC_NUBS), KC_EQL , S(KC_EQL), LSA(KC_7), A(KC_5), KC_MPLY, _______, A(KC_6) ,A(KC_7), A(KC_8), A(KC_9), S(KC_NUHS), KC_NUHS,
-                                   _______, _______, _______, MO(3)  , KC_LOPT,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX),
+                                   _______, _______, KC_LOPT, MO(3)  , _______,        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX),
 
     // NAVIGATION
     // this layer is for NAVIGATION
@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                  _______, KC_INS , KC_PSCR, KC_APP , _______, _______,                   KC_HOME, KC_PGDN, KC_PGUP, KC_END , _______, _______,
                  _______, KC_LALT, KC_LCTL, KC_LSFT, KC_LGUI, KC_CAPS,                   KC_LEFT, KC_DOWN, KC_UP  , KC_RGHT, KC_BSPC, KC_DEL ,
                  _______, C(KC_Z), C(KC_X), C(KC_C), C(KC_V), _______, _______, _______, KC_H   , KC_J   , KC_L   , KC_K   , _______, _______,
-                                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT , MO(3)  , _______, _______, _______),
+                                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, KC_ENT , MO(3)  , _______, _______),
 
     // SYSTEM CONTROL
     // control music, volume, sleep and the mouse
