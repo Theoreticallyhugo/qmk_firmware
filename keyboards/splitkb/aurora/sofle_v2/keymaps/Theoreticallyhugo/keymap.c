@@ -51,11 +51,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // SYSTEM CONTROL
     // control music, volume, sleep and the mouse
     // first row switch unicode input to the respective OS
-	[3] = LAYOUT(_______, _______, UC_MAC , UC_LINX, UC_WIN , _______,                   _______, _______, _______, _______, _______, _______,
+	[3] = LAYOUT( DF(4) , _______, UC_MAC , UC_LINX, UC_WIN , _______,                   _______, _______, _______, _______, _______, _______,
 	             _______, _______, _______, KC_SLEP, KC_WAKE, _______,                   KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, KC_ACL0, _______,
 	             _______, _______, KC_VOLD, KC_MUTE, KC_VOLU, _______,                   KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_ACL1, KC_ACL2,
 	             _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, _______, XXXXXXX, KC_PWR , _______, KC_BTN1, KC_BTN2, _______, _______, _______,
                                    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX),
+    // GAYMING
+	[4] = LAYOUT(KC_GRV , KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,                   KC_6   , KC_7   , KC_8   , KC_9   , KC_0   , KC_MINS,
+                 KC_TAB , KC_Q   , KC_W   , KC_E   , KC_R   , KC_T   ,                   KC_Y   , KC_U   , KC_I   , KC_O   , KC_P   , KC_LBRC,
+                 KC_ESC , KC_A   , KC_S   , KC_D   , KC_F   , KC_G   ,                   KC_H   , KC_J   , KC_K   , KC_L   , KC_SCLN, KC_QUOT,
+                 KC_LSFT, KC_Z   , KC_X   , KC_C   , KC_V   , KC_B   , KC_MUTE, _______, KC_N   , KC_M   , KC_COMM, KC_DOT , KC_SLSH, KC_RSFT,
+                                   KC_LOPT, KC_ENT , KC_LCTL, KC_SPC , KC_LGUI, KC_LOPT, KC_SPC , KC_ROPT, KC_BSPC, DF(0) ),
 };
 
 #if defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
@@ -64,6 +70,7 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [1] = { ENCODER_CCW_CW(KC_MRWD, KC_MFFD),       ENCODER_CCW_CW(XXXXXXX, XXXXXXX)  },
     [2] = { ENCODER_CCW_CW(XXXXXXX, XXXXXXX),       ENCODER_CCW_CW(KC_BRID, KC_BRIU)  },
     [3] = { ENCODER_CCW_CW(XXXXXXX, XXXXXXX),       ENCODER_CCW_CW(XXXXXXX, XXXXXXX) },
+    [4] = { ENCODER_CCW_CW(XXXXXXX, XXXXXXX),       ENCODER_CCW_CW(XXXXXXX, XXXXXXX) },
 };
 #endif // defined(ENCODER_ENABLE) && defined(ENCODER_MAP_ENABLE)
 
