@@ -16,6 +16,9 @@
 
 #pragma once
 
-#ifdef OLED_ENABLE
-#   define OLED_FONT_H "keyboards/splitkb/aurora/sofle_v2/glcdfont.c"
-#endif
+#define RGB_MATRIX_SLEEP
+#define RGB_MATRIX_KEYPRESSES
+#define ENABLE_RGB_MATRIX_SOLID_REACTIVE_SIMPLE
+#define ENABLE_RGB_MATRIX_SOLID_SPLASH
+#define ENABLE_RGB_MATRIX_RAINBOW_BEACON
+#define ENABLE_RGB_MATRIX_CYCLE_LEFT_RIGHT

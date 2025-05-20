@@ -21,7 +21,8 @@ enum layers {
   _DEFAULT,
   _LOWER,
   _RAISE,
-  _ADJUST
+  _ADJUST,
+  _GAYMING
 };
 
 #ifdef OLED_ENABLE
